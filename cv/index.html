@@ -174,6 +174,250 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opa
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--border-subtle);border-radius:3px}
 ::-webkit-scrollbar-thumb:hover{background:var(--accent-cyan)}
+
+/* ── ATS MODE ─────────────────────────────────────────────── */
+[data-view="ats"] .blob,
+[data-view="ats"] body::before,
+[data-view="ats"] .hero-section,
+[data-view="ats"] .sidebar,
+[data-view="ats"] .card:hover,
+[data-view="ats"] .wave-divider,
+[data-view="ats"] .avatar-ring,
+[data-view="ats"] .sec-icon,
+[data-view="ats"] .skill-bar-bg,
+[data-view="ats"] .icon-badge,
+[data-view="ats"] .edu-icon-wrap,
+[data-view="ats"] .exp-type-badge,
+[data-view="ats"] .social-row,
+[data-view="ats"] .contact-email-btn,
+[data-view="ats"] .bento .icon-badge { display:none!important }
+
+[data-view="ats"] body {
+  background:#ffffff!important;
+  color:#000000!important;
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:11pt!important;
+  line-height:1.5!important;
+}
+[data-view="ats"] .wrapper {
+  max-width:800px;
+  padding:32px 40px 60px;
+}
+[data-view="ats"] .two-col {
+  display:block!important;
+}
+[data-view="ats"] .main-content {
+  gap:0!important;
+}
+[data-view="ats"] .card {
+  background:transparent!important;
+  border:none!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+  transform:none!important;
+}
+[data-view="ats"] .sec {
+  padding:0 0 20px 0!important;
+  border-bottom:1px solid #cccccc;
+  margin-bottom:20px;
+}
+[data-view="ats"] .sec:last-child { border-bottom:none }
+[data-view="ats"] .sec-header { margin-bottom:10px!important }
+[data-view="ats"] .sec-title {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:13pt!important;
+  font-weight:700!important;
+  color:#000000!important;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+[data-view="ats"] .sec-mono { display:none!important }
+[data-view="ats"] .bio-text {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:11pt!important;
+  color:#000000!important;
+  line-height:1.6!important;
+}
+[data-view="ats"] .bio-text strong { color:#000000!important }
+
+/* ATS contact header */
+[data-view="ats"] .ats-contact-header { display:block!important }
+.ats-contact-header { display:none }
+.ats-contact-header h1 {
+  font-family:Arial,Calibri,Helvetica,sans-serif;
+  font-size:18pt;
+  font-weight:700;
+  color:#000000;
+  margin-bottom:4px;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+}
+.ats-contact-header .ats-role {
+  font-size:11pt;
+  color:#333333;
+  margin-bottom:8px;
+}
+.ats-contact-header .ats-contact-line {
+  font-size:10pt;
+  color:#000000;
+  margin-bottom:2px;
+}
+.ats-contact-header hr {
+  border:none;
+  border-top:2px solid #000000;
+  margin:12px 0 0;
+}
+
+/* ATS experience */
+[data-view="ats"] .exp-body {
+  background:transparent!important;
+  border:none!important;
+  border-radius:0!important;
+  padding:0!important;
+  margin-bottom:14px;
+}
+[data-view="ats"] .exp-item { padding-bottom:0!important }
+[data-view="ats"] .exp-role {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:11pt!important;
+  font-weight:700!important;
+  color:#000000!important;
+}
+[data-view="ats"] .exp-org {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:11pt!important;
+  color:#000000!important;
+  font-style:italic;
+}
+[data-view="ats"] .exp-date {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10pt!important;
+  color:#333333!important;
+}
+[data-view="ats"] .exp-top {
+  flex-direction:column!important;
+  gap:2px!important;
+  margin-bottom:4px!important;
+}
+[data-view="ats"] .exp-bullets li {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10.5pt!important;
+  color:#000000!important;
+  padding-left:16px!important;
+  line-height:1.6!important;
+}
+[data-view="ats"] .exp-bullets li::before {
+  content:'•'!important;
+  color:#000000!important;
+  font-size:11pt!important;
+}
+
+/* ATS skills */
+[data-view="ats"] .bento { display:block!important }
+[data-view="ats"] .skill-card {
+  background:transparent!important;
+  border:none!important;
+  border-radius:0!important;
+  padding:0!important;
+  display:inline;
+}
+[data-view="ats"] .skill-name {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10.5pt!important;
+  font-weight:400!important;
+  color:#000000!important;
+  display:inline!important;
+  margin:0!important;
+}
+[data-view="ats"] .skill-name::after { content:', ' }
+[data-view="ats"] .skill-card:last-child .skill-name::after { content:'' }
+
+/* ATS tools */
+[data-view="ats"] .tool-cloud { gap:0!important; display:inline!important }
+[data-view="ats"] .tool-tag {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10.5pt!important;
+  background:transparent!important;
+  border:none!important;
+  border-radius:0!important;
+  padding:0!important;
+  color:#000000!important;
+  display:inline!important;
+}
+[data-view="ats"] .tool-tag::after { content:', ' }
+[data-view="ats"] .tool-tag:last-child::after { content:'' }
+
+/* ATS education */
+[data-view="ats"] .edu-item {
+  background:transparent!important;
+  border:none!important;
+  border-radius:0!important;
+  padding:0 0 10px 0!important;
+  gap:0!important;
+}
+[data-view="ats"] .edu-title {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:11pt!important;
+  font-weight:700!important;
+  color:#000000!important;
+}
+[data-view="ats"] .edu-sub {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10pt!important;
+  color:#333333!important;
+}
+
+/* ATS languages */
+[data-view="ats"] .lang-item {
+  background:transparent!important;
+  border:none!important;
+  border-radius:0!important;
+  padding:2px 0!important;
+}
+[data-view="ats"] .lang-name {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10.5pt!important;
+  font-weight:700!important;
+  color:#000000!important;
+}
+[data-view="ats"] .lang-level {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10.5pt!important;
+  color:#333333!important;
+}
+
+/* ATS certs */
+[data-view="ats"] .cert-grid { display:block!important }
+[data-view="ats"] .cert-item {
+  background:transparent!important;
+  border:none!important;
+  border-radius:0!important;
+  border-top:none!important;
+  padding:0 0 10px 0!important;
+}
+[data-view="ats"] .cert-label {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:11pt!important;
+  font-weight:700!important;
+  color:#000000!important;
+}
+[data-view="ats"] .cert-sub {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10pt!important;
+  color:#333333!important;
+}
+[data-view="ats"] .cert-badge {
+  font-family:Arial,Calibri,Helvetica,sans-serif!important;
+  font-size:10pt!important;
+  color:#333333!important;
+}
+[data-view="ats"] .cert-badge svg { display:none!important }
+
+/* hide contact CTA section in ATS */
+[data-view="ats"] #sec-contact { display:none!important }
+/* hide reveal animations in ATS */
+[data-view="ats"] .reveal,[data-view="ats"] .reveal-left{opacity:1!important;transform:none!important}
+
 @media print{
   body{background:#fff!important;color:#000!important}
   .blob,.top-controls,.minimap,body::before{display:none!important}
@@ -256,6 +500,24 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opa
 
 <!-- BODY -->
 <div class="wrapper">
+
+<!-- ATS CONTACT HEADER (only visible in ATS mode) -->
+<div class="ats-contact-header">
+  <h1>
+    <span class="fr">William Gaugirard</span>
+    <span class="en">William Gaugirard</span>
+  </h1>
+  <div class="ats-role">
+    <span class="fr">Graphiste | Spécialiste Créatif | Community Manager</span>
+    <span class="en">Graphic Designer | Creative Specialist | Community Manager</span>
+  </div>
+  <div class="ats-contact-line">willgaugirard@gmail.com</div>
+  <div class="ats-contact-line">+32 483 890 270</div>
+  <div class="ats-contact-line">Liège, Belgique</div>
+  <div class="ats-contact-line">github.com/G1NYU</div>
+  <hr>
+</div>
+
 <div class="two-col">
 
 <!-- SIDEBAR -->
@@ -331,7 +593,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opa
   <section class="sec card reveal" id="sec-exp">
     <div class="sec-header">
       <div class="sec-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-magenta)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-      <h2 class="sec-title"><span class="fr">Expérience Professionnelle</span><span class="en">Professional Experience</span></h2>
+      <h2 class="sec-title"><span class="fr">Expérience Professionnelle</span><span class="en">Work Experience</span></h2>
     </div>
     <div class="timeline">
       <div class="exp-item reveal" style="transition-delay:.04s">
@@ -467,6 +729,19 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opa
     </div>
   </section>
 
+  <!-- Languages section in main for ATS mode -->
+  <section class="sec card reveal" id="sec-lang-main">
+    <div class="sec-header">
+      <div class="sec-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+      <h2 class="sec-title"><span class="fr">Langues</span><span class="en">Languages</span></h2>
+    </div>
+    <div class="lang-list">
+      <div class="lang-item"><span class="lang-name fr">Français</span><span class="lang-name en">French</span><span class="lang-level fr">Natif</span><span class="lang-level en">Native</span></div>
+      <div class="lang-item"><span class="lang-name fr">Anglais</span><span class="lang-name en">English</span><span class="lang-level">C2 · TOEFL</span></div>
+      <div class="lang-item"><span class="lang-name fr">Espagnol</span><span class="lang-name en">Spanish</span><span class="lang-level">A2</span></div>
+    </div>
+  </section>
+
   <section class="sec card reveal contact-cta" id="sec-contact">
     <div style="font-family:var(--font-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:12px"><span class="fr">Disponible pour de nouvelles opportunités</span><span class="en">Open to new opportunities</span></div>
     <div class="hero-name" style="font-size:clamp(1.8rem,4vw,3rem);margin-bottom:20px"><span class="fr">Travaillons ensemble.</span><span class="en">Let's work together.</span></div>
@@ -488,8 +763,29 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:1;opa
 <script>
 const root = document.documentElement;
 function setLang(l){root.setAttribute('data-lang',l);document.getElementById('btnFr').classList.toggle('active',l==='fr');document.getElementById('btnEn').classList.toggle('active',l==='en');}
-function setView(v){root.setAttribute('data-view',v);document.getElementById('btnDesigner').classList.toggle('active',v==='designer');document.getElementById('btnAts').classList.toggle('active',v==='ats');document.querySelectorAll('.blob').forEach(el=>el.style.opacity=v==='ats'?'0':'');}
+function setView(v){
+  root.setAttribute('data-view',v);
+  document.getElementById('btnDesigner').classList.toggle('active',v==='designer');
+  document.getElementById('btnAts').classList.toggle('active',v==='ats');
+  document.querySelectorAll('.blob').forEach(el=>el.style.opacity=v==='ats'?'0':'');
+  // In ATS mode: hide hero, show ats header, hide sidebar lang card, show main lang section
+  const heroEl = document.querySelector('.hero-section');
+  const sidebarEl = document.querySelector('.sidebar');
+  const langMain = document.getElementById('sec-lang-main');
+  if(v==='ats'){
+    if(heroEl) heroEl.style.display='none';
+    if(langMain) langMain.style.display='';
+    // scroll to top
+    window.scrollTo({top:0,behavior:'instant'});
+  } else {
+    if(heroEl) heroEl.style.display='';
+    if(langMain) langMain.style.display='none';
+  }
+}
 function toggleTheme(){root.setAttribute('data-theme',root.getAttribute('data-theme')==='dark'?'light':'dark');}
+
+// hide lang-main by default (only shown in ATS)
+document.getElementById('sec-lang-main').style.display='none';
 
 const sections=['sec-hero','sec-bio','sec-exp','sec-skills','sec-tools','sec-edu','sec-contact'];
 const mm=document.getElementById('minimap');
